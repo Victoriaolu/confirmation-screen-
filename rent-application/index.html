@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rental Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Rental Application</h2>
+        <form id="rentalApplicationForm">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" required>
+
+            <label for="income">Monthly Income:</label>
+            <input type="number" id="income" required>
+
+            <button type="submit">Submit Application</button>
+        </form>
+        <div id="confirmationMessage" class="hidden">
+            <p>Your application has been submitted successfully!</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
